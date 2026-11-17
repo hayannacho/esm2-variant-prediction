@@ -1,0 +1,57 @@
+{
+  "model": "esm2_t6_8M_UR50D",
+  "embedding_dimension": 320,
+  "backbone_frozen": true,
+  "device": "cpu",
+  "seed": 42,
+  "epochs": 5,
+  "learning_rate": 0.0001,
+  "hidden_dimension": 256,
+  "batch_size": 8,
+  "torch_version": "2.15.0",
+  "numpy_version": "2.4.6",
+  "sequence_length": 60,
+  "split": "held-out mutation positions",
+  "train_variants": 48,
+  "validation_variants": 12,
+  "train_positions": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    15,
+    18,
+    24,
+    30,
+    33,
+    36,
+    39,
+    48,
+    51,
+    54,
+    57
+  ],
+  "validation_positions": [
+    21,
+    27,
+    42,
+    45
+  ],
+  "candidate_variants": 20,
+  "train_mse_by_epoch": [
+    0.19527451321482658,
+    0.18261024604241052,
+    0.18158855785926184,
+    0.18030107269684473,
+    0.18036859979232153
+  ],
+  "validation": {
+    "mse": 0.2323046773672104,
+    "spearman": -0.2937062937062937
+  },
+  "training_mean_baseline": {
+    "mse": 0.24068562001291924,
+    "spearman": null
+  }
+}
